@@ -1,0 +1,61 @@
+# Git ignore for welding safety system project (public GitHub)
+# ============================================
+
+# Large binary installers / SDKs (>5MB, not needed in repo)
+OrbbecSDK_v2*.exe
+*.exe
+*.dll
+
+# MediaPipe / YOLO model weights (downloadable, too large for GitHub)
+*.task
+*.pt
+*.onnx
+*.pb
+
+# Document binaries (keep markdown versions instead)
+*.docx
+*.doc
+*.pdf
+~$*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+gemini/
+.venv/
+venv/
+env/
+.openni310/
+.compat_openni/
+.wheelhouse/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+Log/
+*.log
+
+# Temp / debug images (keep key demo images)
+debug-*.md
+camera_diag.ps1
+quick_start.bat
+
+# OpenNI runtime (proprietary, large)
+openni_runtime/
+OpenNI2/
